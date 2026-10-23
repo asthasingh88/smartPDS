@@ -1,0 +1,201 @@
+utterance_id,text,language,intent,expected_response_type
+U001,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U002,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U003,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U004,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U005,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U006,Show today's dispatch,en,dispatch_today,database_report
+U007,How much rice is left?,en,stock_balance,database_report
+U008,Which batch expires first?,en,expiry_priority,database_report
+U009,Forecast next month's demand,en,demand_forecast,database_report
+U010,Check for stock mismatch,en,anomaly_check,database_report
+U011,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U012,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U013,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U014,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U015,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U016,Show today's dispatch,en,dispatch_today,database_report
+U017,How much rice is left?,en,stock_balance,database_report
+U018,Which batch expires first?,en,expiry_priority,database_report
+U019,Forecast next month's demand,en,demand_forecast,database_report
+U020,Check for stock mismatch,en,anomaly_check,database_report
+U021,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U022,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U023,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U024,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U025,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U026,Show today's dispatch,en,dispatch_today,database_report
+U027,How much rice is left?,en,stock_balance,database_report
+U028,Which batch expires first?,en,expiry_priority,database_report
+U029,Forecast next month's demand,en,demand_forecast,database_report
+U030,Check for stock mismatch,en,anomaly_check,database_report
+U031,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U032,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U033,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U034,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U035,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U036,Show today's dispatch,en,dispatch_today,database_report
+U037,How much rice is left?,en,stock_balance,database_report
+U038,Which batch expires first?,en,expiry_priority,database_report
+U039,Forecast next month's demand,en,demand_forecast,database_report
+U040,Check for stock mismatch,en,anomaly_check,database_report
+U041,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U042,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U043,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U044,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U045,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U046,Show today's dispatch,en,dispatch_today,database_report
+U047,How much rice is left?,en,stock_balance,database_report
+U048,Which batch expires first?,en,expiry_priority,database_report
+U049,Forecast next month's demand,en,demand_forecast,database_report
+U050,Check for stock mismatch,en,anomaly_check,database_report
+U051,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U052,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U053,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U054,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U055,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U056,Show today's dispatch,en,dispatch_today,database_report
+U057,How much rice is left?,en,stock_balance,database_report
+U058,Which batch expires first?,en,expiry_priority,database_report
+U059,Forecast next month's demand,en,demand_forecast,database_report
+U060,Check for stock mismatch,en,anomaly_check,database_report
+U061,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U062,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U063,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U064,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U065,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U066,Show today's dispatch,en,dispatch_today,database_report
+U067,How much rice is left?,en,stock_balance,database_report
+U068,Which batch expires first?,en,expiry_priority,database_report
+U069,Forecast next month's demand,en,demand_forecast,database_report
+U070,Check for stock mismatch,en,anomaly_check,database_report
+U071,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U072,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U073,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U074,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U075,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U076,Show today's dispatch,en,dispatch_today,database_report
+U077,How much rice is left?,en,stock_balance,database_report
+U078,Which batch expires first?,en,expiry_priority,database_report
+U079,Forecast next month's demand,en,demand_forecast,database_report
+U080,Check for stock mismatch,en,anomaly_check,database_report
+U081,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U082,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U083,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U084,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U085,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U086,Show today's dispatch,en,dispatch_today,database_report
+U087,How much rice is left?,en,stock_balance,database_report
+U088,Which batch expires first?,en,expiry_priority,database_report
+U089,Forecast next month's demand,en,demand_forecast,database_report
+U090,Check for stock mismatch,en,anomaly_check,database_report
+U091,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U092,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U093,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U094,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U095,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U096,Show today's dispatch,en,dispatch_today,database_report
+U097,How much rice is left?,en,stock_balance,database_report
+U098,Which batch expires first?,en,expiry_priority,database_report
+U099,Forecast next month's demand,en,demand_forecast,database_report
+U100,Check for stock mismatch,en,anomaly_check,database_report
+U101,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U102,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U103,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U104,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U105,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U106,Show today's dispatch,en,dispatch_today,database_report
+U107,How much rice is left?,en,stock_balance,database_report
+U108,Which batch expires first?,en,expiry_priority,database_report
+U109,Forecast next month's demand,en,demand_forecast,database_report
+U110,Check for stock mismatch,en,anomaly_check,database_report
+U111,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U112,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U113,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U114,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U115,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U116,Show today's dispatch,en,dispatch_today,database_report
+U117,How much rice is left?,en,stock_balance,database_report
+U118,Which batch expires first?,en,expiry_priority,database_report
+U119,Forecast next month's demand,en,demand_forecast,database_report
+U120,Check for stock mismatch,en,anomaly_check,database_report
+U121,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U122,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U123,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U124,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U125,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U126,Show today's dispatch,en,dispatch_today,database_report
+U127,How much rice is left?,en,stock_balance,database_report
+U128,Which batch expires first?,en,expiry_priority,database_report
+U129,Forecast next month's demand,en,demand_forecast,database_report
+U130,Check for stock mismatch,en,anomaly_check,database_report
+U131,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U132,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U133,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U134,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U135,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U136,Show today's dispatch,en,dispatch_today,database_report
+U137,How much rice is left?,en,stock_balance,database_report
+U138,Which batch expires first?,en,expiry_priority,database_report
+U139,Forecast next month's demand,en,demand_forecast,database_report
+U140,Check for stock mismatch,en,anomaly_check,database_report
+U141,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U142,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U143,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U144,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U145,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U146,Show today's dispatch,en,dispatch_today,database_report
+U147,How much rice is left?,en,stock_balance,database_report
+U148,Which batch expires first?,en,expiry_priority,database_report
+U149,Forecast next month's demand,en,demand_forecast,database_report
+U150,Check for stock mismatch,en,anomaly_check,database_report
+U151,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U152,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U153,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U154,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U155,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U156,Show today's dispatch,en,dispatch_today,database_report
+U157,How much rice is left?,en,stock_balance,database_report
+U158,Which batch expires first?,en,expiry_priority,database_report
+U159,Forecast next month's demand,en,demand_forecast,database_report
+U160,Check for stock mismatch,en,anomaly_check,database_report
+U161,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U162,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U163,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U164,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U165,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U166,Show today's dispatch,en,dispatch_today,database_report
+U167,How much rice is left?,en,stock_balance,database_report
+U168,Which batch expires first?,en,expiry_priority,database_report
+U169,Forecast next month's demand,en,demand_forecast,database_report
+U170,Check for stock mismatch,en,anomaly_check,database_report
+U171,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U172,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U173,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U174,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U175,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U176,Show today's dispatch,en,dispatch_today,database_report
+U177,How much rice is left?,en,stock_balance,database_report
+U178,Which batch expires first?,en,expiry_priority,database_report
+U179,Forecast next month's demand,en,demand_forecast,database_report
+U180,Check for stock mismatch,en,anomaly_check,database_report
+U181,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U182,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U183,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U184,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U185,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U186,Show today's dispatch,en,dispatch_today,database_report
+U187,How much rice is left?,en,stock_balance,database_report
+U188,Which batch expires first?,en,expiry_priority,database_report
+U189,Forecast next month's demand,en,demand_forecast,database_report
+U190,Check for stock mismatch,en,anomaly_check,database_report
+U191,Aaj kitna ration dispatch hua?,hi,dispatch_today,database_report
+U192,Godown mein kitna chawal bacha hai?,hi,stock_balance,database_report
+U193,Kaunsa batch pehle expire hoga?,hi,expiry_priority,database_report
+U194,Is mahine ki demand kitni hai?,hi,demand_forecast,database_report
+U195,Kya stock mein koi gadbad hai?,hi,anomaly_check,database_report
+U196,Show today's dispatch,en,dispatch_today,database_report
+U197,How much rice is left?,en,stock_balance,database_report
+U198,Which batch expires first?,en,expiry_priority,database_report
+U199,Forecast next month's demand,en,demand_forecast,database_report
+U200,Check for stock mismatch,en,anomaly_check,database_report

@@ -1,0 +1,201 @@
+query_id,query,language,intent,commodity,expected_data_source
+Q001,How much sugar is left in the godown?,en,stock_balance,sugar,inventory_database
+Q002,What is the current stock of wheat?,en,stock_balance,wheat,inventory_database
+Q003,How much sugar was dispatched today?,en,dispatch_today,sugar,inventory_database
+Q004,Show today's dispatch for sugar,en,dispatch_today,sugar,inventory_database
+Q005,Which batch of rice expires first?,en,expiry_priority,rice,inventory_database
+Q006,Which rice batch should be issued first?,en,expiry_priority,rice,inventory_database
+Q007,How much stock came in this week?,en,weekly_inflow,sugar,inventory_database
+Q008,Show weekly inflow,en,weekly_inflow,rice,inventory_database
+Q009,Which commodity is low on stock?,en,low_stock,rice,inventory_database
+Q010,Are we running low on rice?,en,low_stock,rice,inventory_database
+Q011,How much pulses is left in the godown?,en,stock_balance,pulses,inventory_database
+Q012,What is the current stock of pulses?,en,stock_balance,pulses,inventory_database
+Q013,How much sugar was dispatched today?,en,dispatch_today,sugar,inventory_database
+Q014,Show today's dispatch for rice,en,dispatch_today,rice,inventory_database
+Q015,Which batch of pulses expires first?,en,expiry_priority,pulses,inventory_database
+Q016,Which sugar batch should be issued first?,en,expiry_priority,sugar,inventory_database
+Q017,How much stock came in this week?,en,weekly_inflow,rice,inventory_database
+Q018,Show weekly inflow,en,weekly_inflow,wheat,inventory_database
+Q019,Which commodity is low on stock?,en,low_stock,rice,inventory_database
+Q020,Are we running low on rice?,en,low_stock,rice,inventory_database
+Q021,How much pulses is left in the godown?,en,stock_balance,pulses,inventory_database
+Q022,What is the current stock of sugar?,en,stock_balance,sugar,inventory_database
+Q023,How much sugar was dispatched today?,en,dispatch_today,sugar,inventory_database
+Q024,Show today's dispatch for pulses,en,dispatch_today,pulses,inventory_database
+Q025,Which batch of rice expires first?,en,expiry_priority,rice,inventory_database
+Q026,Which wheat batch should be issued first?,en,expiry_priority,wheat,inventory_database
+Q027,How much stock came in this week?,en,weekly_inflow,rice,inventory_database
+Q028,Show weekly inflow,en,weekly_inflow,rice,inventory_database
+Q029,Which commodity is low on stock?,en,low_stock,wheat,inventory_database
+Q030,Are we running low on pulses?,en,low_stock,pulses,inventory_database
+Q031,How much sugar is left in the godown?,en,stock_balance,sugar,inventory_database
+Q032,What is the current stock of pulses?,en,stock_balance,pulses,inventory_database
+Q033,How much pulses was dispatched today?,en,dispatch_today,pulses,inventory_database
+Q034,Show today's dispatch for rice,en,dispatch_today,rice,inventory_database
+Q035,Which batch of sugar expires first?,en,expiry_priority,sugar,inventory_database
+Q036,Which sugar batch should be issued first?,en,expiry_priority,sugar,inventory_database
+Q037,How much stock came in this week?,en,weekly_inflow,pulses,inventory_database
+Q038,Show weekly inflow,en,weekly_inflow,wheat,inventory_database
+Q039,Which commodity is low on stock?,en,low_stock,pulses,inventory_database
+Q040,Are we running low on wheat?,en,low_stock,wheat,inventory_database
+Q041,How much sugar is left in the godown?,en,stock_balance,sugar,inventory_database
+Q042,What is the current stock of pulses?,en,stock_balance,pulses,inventory_database
+Q043,How much rice was dispatched today?,en,dispatch_today,rice,inventory_database
+Q044,Show today's dispatch for pulses,en,dispatch_today,pulses,inventory_database
+Q045,Which batch of sugar expires first?,en,expiry_priority,sugar,inventory_database
+Q046,Which rice batch should be issued first?,en,expiry_priority,rice,inventory_database
+Q047,How much stock came in this week?,en,weekly_inflow,rice,inventory_database
+Q048,Show weekly inflow,en,weekly_inflow,wheat,inventory_database
+Q049,Which commodity is low on stock?,en,low_stock,rice,inventory_database
+Q050,Are we running low on rice?,en,low_stock,rice,inventory_database
+Q051,How much pulses is left in the godown?,en,stock_balance,pulses,inventory_database
+Q052,What is the current stock of sugar?,en,stock_balance,sugar,inventory_database
+Q053,How much wheat was dispatched today?,en,dispatch_today,wheat,inventory_database
+Q054,Show today's dispatch for pulses,en,dispatch_today,pulses,inventory_database
+Q055,Which batch of rice expires first?,en,expiry_priority,rice,inventory_database
+Q056,Which rice batch should be issued first?,en,expiry_priority,rice,inventory_database
+Q057,How much stock came in this week?,en,weekly_inflow,wheat,inventory_database
+Q058,Show weekly inflow,en,weekly_inflow,sugar,inventory_database
+Q059,Which commodity is low on stock?,en,low_stock,wheat,inventory_database
+Q060,Are we running low on pulses?,en,low_stock,pulses,inventory_database
+Q061,How much wheat is left in the godown?,en,stock_balance,wheat,inventory_database
+Q062,What is the current stock of rice?,en,stock_balance,rice,inventory_database
+Q063,How much pulses was dispatched today?,en,dispatch_today,pulses,inventory_database
+Q064,Show today's dispatch for rice,en,dispatch_today,rice,inventory_database
+Q065,Which batch of sugar expires first?,en,expiry_priority,sugar,inventory_database
+Q066,Which rice batch should be issued first?,en,expiry_priority,rice,inventory_database
+Q067,How much stock came in this week?,en,weekly_inflow,rice,inventory_database
+Q068,Show weekly inflow,en,weekly_inflow,wheat,inventory_database
+Q069,Which commodity is low on stock?,en,low_stock,rice,inventory_database
+Q070,Are we running low on pulses?,en,low_stock,pulses,inventory_database
+Q071,How much pulses is left in the godown?,en,stock_balance,pulses,inventory_database
+Q072,What is the current stock of sugar?,en,stock_balance,sugar,inventory_database
+Q073,How much pulses was dispatched today?,en,dispatch_today,pulses,inventory_database
+Q074,Show today's dispatch for wheat,en,dispatch_today,wheat,inventory_database
+Q075,Which batch of sugar expires first?,en,expiry_priority,sugar,inventory_database
+Q076,Which pulses batch should be issued first?,en,expiry_priority,pulses,inventory_database
+Q077,How much stock came in this week?,en,weekly_inflow,wheat,inventory_database
+Q078,Show weekly inflow,en,weekly_inflow,pulses,inventory_database
+Q079,Which commodity is low on stock?,en,low_stock,pulses,inventory_database
+Q080,Are we running low on rice?,en,low_stock,rice,inventory_database
+Q081,How much pulses is left in the godown?,en,stock_balance,pulses,inventory_database
+Q082,What is the current stock of pulses?,en,stock_balance,pulses,inventory_database
+Q083,How much wheat was dispatched today?,en,dispatch_today,wheat,inventory_database
+Q084,Show today's dispatch for wheat,en,dispatch_today,wheat,inventory_database
+Q085,Which batch of rice expires first?,en,expiry_priority,rice,inventory_database
+Q086,Which pulses batch should be issued first?,en,expiry_priority,pulses,inventory_database
+Q087,How much stock came in this week?,en,weekly_inflow,rice,inventory_database
+Q088,Show weekly inflow,en,weekly_inflow,pulses,inventory_database
+Q089,Which commodity is low on stock?,en,low_stock,sugar,inventory_database
+Q090,Are we running low on sugar?,en,low_stock,sugar,inventory_database
+Q091,How much rice is left in the godown?,en,stock_balance,rice,inventory_database
+Q092,What is the current stock of rice?,en,stock_balance,rice,inventory_database
+Q093,How much rice was dispatched today?,en,dispatch_today,rice,inventory_database
+Q094,Show today's dispatch for wheat,en,dispatch_today,wheat,inventory_database
+Q095,Which batch of wheat expires first?,en,expiry_priority,wheat,inventory_database
+Q096,Which wheat batch should be issued first?,en,expiry_priority,wheat,inventory_database
+Q097,How much stock came in this week?,en,weekly_inflow,rice,inventory_database
+Q098,Show weekly inflow,en,weekly_inflow,pulses,inventory_database
+Q099,Which commodity is low on stock?,en,low_stock,sugar,inventory_database
+Q100,Are we running low on rice?,en,low_stock,rice,inventory_database
+Q101,How much wheat is left in the godown?,en,stock_balance,wheat,inventory_database
+Q102,What is the current stock of wheat?,en,stock_balance,wheat,inventory_database
+Q103,How much rice was dispatched today?,en,dispatch_today,rice,inventory_database
+Q104,Show today's dispatch for rice,en,dispatch_today,rice,inventory_database
+Q105,Which batch of wheat expires first?,en,expiry_priority,wheat,inventory_database
+Q106,Which pulses batch should be issued first?,en,expiry_priority,pulses,inventory_database
+Q107,How much stock came in this week?,en,weekly_inflow,wheat,inventory_database
+Q108,Show weekly inflow,en,weekly_inflow,wheat,inventory_database
+Q109,Which commodity is low on stock?,en,low_stock,rice,inventory_database
+Q110,Are we running low on pulses?,en,low_stock,pulses,inventory_database
+Q111,How much wheat is left in the godown?,en,stock_balance,wheat,inventory_database
+Q112,What is the current stock of wheat?,en,stock_balance,wheat,inventory_database
+Q113,How much sugar was dispatched today?,en,dispatch_today,sugar,inventory_database
+Q114,Show today's dispatch for rice,en,dispatch_today,rice,inventory_database
+Q115,Which batch of sugar expires first?,en,expiry_priority,sugar,inventory_database
+Q116,Which sugar batch should be issued first?,en,expiry_priority,sugar,inventory_database
+Q117,How much stock came in this week?,en,weekly_inflow,wheat,inventory_database
+Q118,Show weekly inflow,en,weekly_inflow,rice,inventory_database
+Q119,Which commodity is low on stock?,en,low_stock,pulses,inventory_database
+Q120,Are we running low on wheat?,en,low_stock,wheat,inventory_database
+Q121,How much pulses is left in the godown?,en,stock_balance,pulses,inventory_database
+Q122,What is the current stock of pulses?,en,stock_balance,pulses,inventory_database
+Q123,How much rice was dispatched today?,en,dispatch_today,rice,inventory_database
+Q124,Show today's dispatch for sugar,en,dispatch_today,sugar,inventory_database
+Q125,Which batch of rice expires first?,en,expiry_priority,rice,inventory_database
+Q126,Which pulses batch should be issued first?,en,expiry_priority,pulses,inventory_database
+Q127,How much stock came in this week?,en,weekly_inflow,wheat,inventory_database
+Q128,Show weekly inflow,en,weekly_inflow,pulses,inventory_database
+Q129,Which commodity is low on stock?,en,low_stock,wheat,inventory_database
+Q130,Are we running low on wheat?,en,low_stock,wheat,inventory_database
+Q131,How much rice is left in the godown?,en,stock_balance,rice,inventory_database
+Q132,What is the current stock of pulses?,en,stock_balance,pulses,inventory_database
+Q133,How much sugar was dispatched today?,en,dispatch_today,sugar,inventory_database
+Q134,Show today's dispatch for pulses,en,dispatch_today,pulses,inventory_database
+Q135,Which batch of pulses expires first?,en,expiry_priority,pulses,inventory_database
+Q136,Which sugar batch should be issued first?,en,expiry_priority,sugar,inventory_database
+Q137,How much stock came in this week?,en,weekly_inflow,rice,inventory_database
+Q138,Show weekly inflow,en,weekly_inflow,pulses,inventory_database
+Q139,Which commodity is low on stock?,en,low_stock,pulses,inventory_database
+Q140,Are we running low on wheat?,en,low_stock,wheat,inventory_database
+Q141,How much pulses is left in the godown?,en,stock_balance,pulses,inventory_database
+Q142,What is the current stock of sugar?,en,stock_balance,sugar,inventory_database
+Q143,How much wheat was dispatched today?,en,dispatch_today,wheat,inventory_database
+Q144,Show today's dispatch for rice,en,dispatch_today,rice,inventory_database
+Q145,Which batch of wheat expires first?,en,expiry_priority,wheat,inventory_database
+Q146,Which sugar batch should be issued first?,en,expiry_priority,sugar,inventory_database
+Q147,How much stock came in this week?,en,weekly_inflow,sugar,inventory_database
+Q148,Show weekly inflow,en,weekly_inflow,wheat,inventory_database
+Q149,Which commodity is low on stock?,en,low_stock,rice,inventory_database
+Q150,Are we running low on wheat?,en,low_stock,wheat,inventory_database
+Q151,How much rice is left in the godown?,en,stock_balance,rice,inventory_database
+Q152,What is the current stock of wheat?,en,stock_balance,wheat,inventory_database
+Q153,How much sugar was dispatched today?,en,dispatch_today,sugar,inventory_database
+Q154,Show today's dispatch for pulses,en,dispatch_today,pulses,inventory_database
+Q155,Which batch of pulses expires first?,en,expiry_priority,pulses,inventory_database
+Q156,Which rice batch should be issued first?,en,expiry_priority,rice,inventory_database
+Q157,How much stock came in this week?,en,weekly_inflow,rice,inventory_database
+Q158,Show weekly inflow,en,weekly_inflow,rice,inventory_database
+Q159,Which commodity is low on stock?,en,low_stock,sugar,inventory_database
+Q160,Are we running low on wheat?,en,low_stock,wheat,inventory_database
+Q161,How much sugar is left in the godown?,en,stock_balance,sugar,inventory_database
+Q162,What is the current stock of pulses?,en,stock_balance,pulses,inventory_database
+Q163,How much rice was dispatched today?,en,dispatch_today,rice,inventory_database
+Q164,Show today's dispatch for wheat,en,dispatch_today,wheat,inventory_database
+Q165,Which batch of pulses expires first?,en,expiry_priority,pulses,inventory_database
+Q166,Which pulses batch should be issued first?,en,expiry_priority,pulses,inventory_database
+Q167,How much stock came in this week?,en,weekly_inflow,pulses,inventory_database
+Q168,Show weekly inflow,en,weekly_inflow,sugar,inventory_database
+Q169,Which commodity is low on stock?,en,low_stock,rice,inventory_database
+Q170,Are we running low on pulses?,en,low_stock,pulses,inventory_database
+Q171,How much rice is left in the godown?,en,stock_balance,rice,inventory_database
+Q172,What is the current stock of sugar?,en,stock_balance,sugar,inventory_database
+Q173,How much pulses was dispatched today?,en,dispatch_today,pulses,inventory_database
+Q174,Show today's dispatch for sugar,en,dispatch_today,sugar,inventory_database
+Q175,Which batch of sugar expires first?,en,expiry_priority,sugar,inventory_database
+Q176,Which rice batch should be issued first?,en,expiry_priority,rice,inventory_database
+Q177,How much stock came in this week?,en,weekly_inflow,pulses,inventory_database
+Q178,Show weekly inflow,en,weekly_inflow,sugar,inventory_database
+Q179,Which commodity is low on stock?,en,low_stock,pulses,inventory_database
+Q180,Are we running low on rice?,en,low_stock,rice,inventory_database
+Q181,How much sugar is left in the godown?,en,stock_balance,sugar,inventory_database
+Q182,What is the current stock of rice?,en,stock_balance,rice,inventory_database
+Q183,How much pulses was dispatched today?,en,dispatch_today,pulses,inventory_database
+Q184,Show today's dispatch for pulses,en,dispatch_today,pulses,inventory_database
+Q185,Which batch of rice expires first?,en,expiry_priority,rice,inventory_database
+Q186,Which wheat batch should be issued first?,en,expiry_priority,wheat,inventory_database
+Q187,How much stock came in this week?,en,weekly_inflow,sugar,inventory_database
+Q188,Show weekly inflow,en,weekly_inflow,pulses,inventory_database
+Q189,Which commodity is low on stock?,en,low_stock,pulses,inventory_database
+Q190,Are we running low on sugar?,en,low_stock,sugar,inventory_database
+Q191,How much rice is left in the godown?,en,stock_balance,rice,inventory_database
+Q192,What is the current stock of rice?,en,stock_balance,rice,inventory_database
+Q193,How much rice was dispatched today?,en,dispatch_today,rice,inventory_database
+Q194,Show today's dispatch for wheat,en,dispatch_today,wheat,inventory_database
+Q195,Which batch of wheat expires first?,en,expiry_priority,wheat,inventory_database
+Q196,Which pulses batch should be issued first?,en,expiry_priority,pulses,inventory_database
+Q197,How much stock came in this week?,en,weekly_inflow,rice,inventory_database
+Q198,Show weekly inflow,en,weekly_inflow,sugar,inventory_database
+Q199,Which commodity is low on stock?,en,low_stock,pulses,inventory_database
+Q200,Are we running low on sugar?,en,low_stock,sugar,inventory_database
