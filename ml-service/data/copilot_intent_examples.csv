@@ -1,0 +1,7 @@
+example_question,intent,entities,expected_data_source,response_template
+Rice ka total available stock kitna hai?,stock_by_commodity,commodity=Rice,inventory_batches.csv,Rice ka available stock {total_available_kg} kg hai. Batch-wise details neeche hain.
+Kitna wheat stock available hai?,stock_by_commodity,commodity=Wheat,inventory_batches.csv,Wheat ka available stock {total_available_kg} kg hai.
+Kaun se batches ageing risk mein hain?,ageing_risk,window_days=7,inventory_batches.csv;storage_sensor_readings.csv,In batches ko priority review/dispatch ke liye flag kiya gaya hai. Risk reason aur supporting readings dekhein.
+Last 7 days mein kitna ration dispatch hua?,dispatch_sum_window,window_days=7,dispatch_history_90_days.csv,Pichhle 7 din mein {total_dispatch_kg} kg dispatch hua.
+Kaun si commodity shortage risk mein hai?,stockout_risk,commodity=all,inventory_batches.csv;dispatch_history_90_days.csv,Available stock ko historical average daily dispatch se compare karke estimated days of cover dikhaya gaya hai.
+Duplicate challan ya stock mismatch dikhao,audit_anomalies,severity=all,audit_anomalies.csv,Yeh potential anomalies review ke liye flagged hain; yeh apne aap mein wrongdoing ka proof nahi hain.

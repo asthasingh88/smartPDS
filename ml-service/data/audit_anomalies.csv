@@ -1,0 +1,6 @@
+event_id,timestamp,event_type,batch_id,commodity,quantity_kg,reference_id,expected_qty_kg,observed_qty_kg,severity,review_status,notes
+AUD-1001,2026-10-22T09:12:00,DISPATCH_CONFIRMED,RICE-260701-A,Rice,500,DSP-261022-RIC,500,500,Info,Closed,FIFO allocation confirmed.
+AUD-1002,2026-10-22T11:45:00,STOCK_ADJUSTMENT,WHT-260510-A,Wheat,-180,ADJ-204,1800,1620,Medium,Open,Adjustment needs supporting note.
+AUD-1003,2026-10-21T14:20:00,CHALLAN_DUPLICATE_CANDIDATE,SGR-260601-A,Sugar,300,CH-7781,300,300,High,Open,Similar challan number appears on two records; verify before action.
+AUD-1004,2026-10-20T10:05:00,FIFO_EXCEPTION,RICE-260815-B,Rice,400,DSP-261020-RIC,400,400,Medium,In Review,An older eligible batch may have been bypassed; check approval record.
+AUD-1005,2026-10-19T16:40:00,PHYSICAL_STOCK_MISMATCH,RICE-260201-X,Rice,-35,STK-COUNT-19,285,250,High,Open,Recorded stock differs from physical count; investigate and document.

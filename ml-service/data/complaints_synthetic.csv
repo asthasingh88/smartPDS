@@ -1,0 +1,6 @@
+complaint_id,date,fps_id,complaint_type,description,status,data_origin
+CMP001,2026-09-03,FPS002,short_quantity,Beneficiary reports receiving less than displayed transaction quantity,pending,synthetic
+CMP002,2026-09-08,FPS004,shop_closed_during_hours,Shop reportedly closed during published distribution hours,resolved,synthetic
+CMP003,2026-09-12,FPS001,transaction_not_recognized,Beneficiary disputes transaction recorded against their entitlement,under_review,synthetic
+CMP004,2026-09-20,FPS003,quantity_mismatch,Receipt quantity differs from recorded issue quantity,pending,synthetic
+CMP005,2026-10-02,FPS005,other,General service complaint; no allegation established,resolved,synthetic

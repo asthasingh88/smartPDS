@@ -1,0 +1,149 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global Safety Net: Default-deny all undefined paths
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Common Hardened Security Primitives
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidRole(role) {
+      return role in [
+        'Administrator',
+        'Depot Manager',
+        'Warehouse Operator',
+        'PDS Officer',
+        'Auditor / Vigilance Officer',
+        'Warehouse Manager',
+        'Depot Operator',
+        'Vigilance Auditor'
+      ];
+    }
+
+    function isValidCommodityType(comm) {
+      return comm in ['Rice', 'Wheat', 'Sugar', 'Coarse Grains', 'Pulses'];
+    }
+
+    function isValidBatchStatus(status) {
+      return status in ['Eligible', 'Quarantined', 'Damaged', 'Exhausted'];
+    }
+
+    function isValidUser(data) {
+      return data.id is string &&
+             data.id == request.auth.uid &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 100 &&
+             data.email is string && data.email.size() > 0 && data.email.size() <= 150 &&
+             isValidRole(data.role);
+    }
+
+    function isValidCommodity(data) {
+      return data.id is string && isValidCommodityType(data.id) &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 60 &&
+             data.standardBagWeightKg is number && data.standardBagWeightKg > 0 &&
+             data.mspPerQtl is number && data.mspPerQtl >= 0;
+    }
+
+    function isValidBatch(data) {
+      return data.id is string && isValidId(data.id) &&
+             isValidCommodityType(data.commodity) &&
+             data.variety is string && data.variety.size() > 0 && data.variety.size() <= 100 &&
+             data.receivedDate is string && data.receivedDate.size() <= 20 &&
+             data.initialBags is number && data.initialBags >= 0 &&
+             data.availableBags is number && data.availableBags >= 0 &&
+             isValidBatchStatus(data.status);
+    }
+
+    function isValidDispatch(data) {
+      return data.challanNumber is string && isValidId(data.challanNumber) &&
+             data.timestamp is string && data.timestamp.size() <= 50 &&
+             isValidCommodityType(data.commodity) &&
+             data.totalBags is number && data.totalBags > 0 &&
+             data.destinationFpsId is string && data.destinationFpsId.size() <= 80 &&
+             data.status in ['Dispatched', 'In Transit', 'Delivered'];
+    }
+
+    function isValidStockTransaction(data) {
+      return data.id is string && isValidId(data.id) &&
+             data.timestamp is string && data.timestamp.size() <= 50 &&
+             data.action in ['RECEIPT', 'DISPATCH', 'STATUS_CHANGE', 'ADJUSTMENT'] &&
+             data.batchId is string && isValidId(data.batchId) &&
+             data.quantityBags is number &&
+             data.referenceId is string && data.referenceId.size() <= 100;
+    }
+
+    function isValidAuditLog(data) {
+      return data.id is string && isValidId(data.id) &&
+             data.timestamp is string && data.timestamp.size() <= 50 &&
+             data.user is string && data.user.size() > 0 && data.user.size() <= 100 &&
+             data.action is string && data.action.size() <= 50 &&
+             data.entity is string && data.entity.size() <= 50 &&
+             data.referenceId is string && data.referenceId.size() <= 100 &&
+             data.result in ['SUCCESS', 'WARNING', 'REJECTED'];
+    }
+
+    // 1. Users collection: Strictly private user account profiles
+    match /users/{userId} {
+      allow get: if isOwner(userId) && isValidId(userId);
+      allow list: if false; // Protect personnel emails and PII from scraping
+      allow create: if isOwner(userId) && isValidId(userId) && isValidUser(request.resource.data);
+      allow update: if isOwner(userId) && isValidId(userId) && isValidUser(request.resource.data);
+      allow delete: if false;
+    }
+
+    // 2. Commodities Master: Authoritative staple classifications
+    match /commodities/{commodityId} {
+      allow read: if isSignedIn() && isValidId(commodityId);
+      allow create, update: if isSignedIn() && isValidId(commodityId) && isValidCommodity(request.resource.data);
+      allow delete: if false;
+    }
+
+    // 3. Batches: Grain lots with receipt date and available bag counts
+    match /batches/{batchId} {
+      allow read: if isSignedIn() && isValidId(batchId);
+      allow create: if isSignedIn() && isValidId(batchId) && isValidBatch(request.resource.data);
+      allow update: if isSignedIn() && isValidId(batchId) && isValidBatch(request.resource.data);
+      allow delete: if false; // Never delete inventory batches; update status to 'Exhausted'
+    }
+
+    // 4. Dispatches: Form PDS-12 digital challans and transit gate passes
+    match /dispatches/{challanNumber} {
+      allow read: if isSignedIn() && isValidId(challanNumber);
+      allow create: if isSignedIn() && isValidId(challanNumber) && isValidDispatch(request.resource.data);
+      allow update, delete: if false; // Challans are immutable once issued
+    }
+
+    // 5. Stock Transactions: Granular movement audit ledger
+    match /stock_transactions/{transactionId} {
+      allow read: if isSignedIn() && isValidId(transactionId);
+      allow create: if isSignedIn() && isValidId(transactionId) && isValidStockTransaction(request.resource.data);
+      allow update, delete: if false; // Ledger entries cannot be tampered with
+    }
+
+    // 6. Audit Logs: Append-only compliance and vigilance ledger
+    match /audit_logs/{logId} {
+      allow read: if isSignedIn() && isValidId(logId);
+      allow create: if isSignedIn() && isValidId(logId) && isValidAuditLog(request.resource.data);
+      allow update, delete: if false; // Append-only immutable log
+    }
+
+    // 7. Diagnostic Connectivity Test collection
+    match /test/{testId} {
+      allow get: if isValidId(testId);
+      allow list: if false;
+      allow write: if isSignedIn() && isValidId(testId);
+    }
+  }
+}

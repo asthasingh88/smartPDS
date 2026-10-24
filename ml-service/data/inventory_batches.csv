@@ -1,0 +1,11 @@
+batch_id,commodity,receipt_date,expiry_date,received_qty_kg,available_qty_kg,supplier,storage_zone,quality_status,inspection_date
+RICE-260701-A,Rice,2026-07-01,2027-06-30,5000,3100,State Grain Depot A,A1,Pass,2026-10-10
+RICE-260815-B,Rice,2026-08-15,2027-08-14,4000,3600,State Grain Depot B,A2,Pass,2026-10-12
+RICE-260925-C,Rice,2026-09-25,2027-09-24,6000,5100,Regional Procurement Unit,A3,Pass,2026-10-18
+WHT-260510-A,Wheat,2026-05-10,2027-05-09,7000,1800,State Grain Depot A,B1,Review Due,2026-08-01
+WHT-260701-B,Wheat,2026-07-01,2027-06-30,5000,4200,Regional Procurement Unit,B2,Pass,2026-10-14
+WHT-260910-C,Wheat,2026-09-10,2027-09-09,4500,4300,State Grain Depot C,B3,Pass,2026-10-20
+SGR-260601-A,Sugar,2026-06-01,2027-05-31,2500,700,Sugar Cooperative,C1,Pass,2026-10-08
+SGR-260901-B,Sugar,2026-09-01,2027-08-31,3000,2700,Sugar Cooperative,C2,Pass,2026-10-17
+RICE-260201-X,Rice,2026-02-01,2027-01-31,2000,250,Legacy Depot,A4,Inspection Required,2026-07-15
+WHT-260301-X,Wheat,2026-03-01,2027-02-28,3500,600,Legacy Depot,B4,Inspection Required,2026-07-20

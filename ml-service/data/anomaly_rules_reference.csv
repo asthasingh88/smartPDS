@@ -1,0 +1,8 @@
+rule_id,rule_name,detection_logic,recommended_action
+R01,Duplicate challan candidate,Same challan number appears in multiple transactions,Flag for manual verification; do not auto-accuse
+R02,Quantity above entitlement,Recorded quantity exceeds configured entitlement,"Verify applicable policy, household size and units"
+R03,Stock below zero risk,Requested issue exceeds recorded stock before transaction,Block transaction until stock is reconciled
+R04,Short quantity complaint,Beneficiary-confirmed quantity below recorded quantity,Request evidence and conduct review
+R05,Allocation/offtake gap,Large difference between allocation and offtake,"Check reporting period, transit, reserves and reconciliation"
+R06,Manual adjustment spike,Unusual frequency of manual stock adjustments,"Review user, reason, approval and audit history"
+R07,Unrecognized transaction,Beneficiary disputes a recorded transaction,Verify transaction logs and approved authentication alternatives

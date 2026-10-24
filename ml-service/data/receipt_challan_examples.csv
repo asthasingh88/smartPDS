@@ -1,0 +1,4 @@
+document_id,challan_number,supplier,commodity,quantity_kg,receipt_date,batch_id,extraction_status,review_required
+RCPT-501,CH-8801,State Grain Depot A,Rice,2000,2026-10-18,RICE-261018-D,Demo verified,No
+RCPT-502,CH-8802,Regional Procurement Unit,Wheat,1500,2026-10-21,WHT-261021-D,Demo extraction,Yes
+RCPT-503,CH-7781,Sugar Cooperative,Sugar,300,2026-10-21,SGR-261021-C,Duplicate candidate,Yes

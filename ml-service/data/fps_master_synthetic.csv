@@ -1,0 +1,6 @@
+fps_id,district,zone,registered_card_count,shop_status
+FPS001,District-A,Zone-1,420,Active
+FPS002,District-A,Zone-2,380,Active
+FPS003,District-B,Zone-1,510,Active
+FPS004,District-B,Zone-3,290,Active
+FPS005,District-C,Zone-2,460,Active

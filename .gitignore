@@ -1,0 +1,20 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Python ML service
+ml-service/.venv/
+ml-service/**/__pycache__/
+ml-service/**/*.pyc
+.env
+.env.*
+!.env.example
+
+ml-service/**/__pycache__/
+
+ml-service/**/*.pyc
